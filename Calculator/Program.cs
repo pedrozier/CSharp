@@ -1,121 +1,72 @@
 ﻿using System;
+using Calculator.Strategy;
+using Calculator.Strategy.Enumerators;
 
 namespace Calculator
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            Menu();
-            //Soma();
-            //Subtracao();
-            //Divisao();
-            //Multiplicacao();
-        }
+        private static Action<string> _log;
 
         static void Menu()
         {
-            Console.Clear();
+            _log("O que deseja fazer ?");
+            _log("1 - Soma");
+            _log("2 - Subtracao");
+            _log("3 - Multiplicacao");
+            _log("4 - Divisao");
+            _log("5 - Sair");
+        }
 
-            Console.WriteLine("O que deseja fazer?");
-            Console.WriteLine("1 - Soma");
-            Console.WriteLine("2 - Subtração");
-            Console.WriteLine("3 - Divisão");
-            Console.WriteLine("4 - Multiplicação");
-            Console.WriteLine("5 - Sair");
+        static void Main(string[] args)
+        {
+            _log = Console.WriteLine;
 
-            Console.WriteLine("-----------");
-            Console.WriteLine("Selecione uma opção: ");
+            int operacao = 0;
 
-            short res = short.Parse(Console.ReadLine());
-
-            switch (res)
+            do
             {
-                case 1: Soma(); break;
-                case 2: Subtracao(); break;
-                case 3: Divisao(); break;
-                case 4: Multiplicacao(); break;
-                case 5: System.Environment.Exit(0); break;
-                default: Menu(); break;
+                FluxoUsuario(ref operacao);
+            } 
+            while (operacao != 5);
+        }
+
+        static void FluxoUsuario(ref int operacao)
+        {
+            try
+            {
+                Menu();
+
+                int.TryParse(Console.ReadLine(), System.Globalization.NumberStyles.None, null, out operacao);
+
+                if (operacao == 0)
+                    throw new InvalidOperationException("Opção inválida!");
+                
+                if (operacao == 5)
+                    return;
+
+                var calculadora =  CalculadoraFactory.Criar((TipoOperacao)operacao);
+
+                decimal? n1 = LerValor("Insira o primeiro valor:");
+                decimal? n2 = LerValor("Insira o segundo valor:");
+
+                _log($"O resultado é: {calculadora.Calcular(n1.Value, n2.Value)}");
+                _log("=============================");
             }
-
+            catch (InvalidOperationException ex)
+            {
+                _log(ex.Message);
+            }
         }
 
-        static void Soma()
+        static decimal? LerValor(string texto)
         {
-            Console.Clear();
-            Console.WriteLine("Primeiro valor: ");
-            float v1 = float.Parse(Console.ReadLine());
+            _log(texto);
 
-            Console.WriteLine("Segundo valor: ");
-            float v2 = float.Parse(Console.ReadLine());
-
-            Console.WriteLine("");
-
-            float resultado = v1 + v2;
-            //Console.WriteLine("O Resultado da some é " + resultado);
-            Console.WriteLine($"O Resultado da some é {resultado} ");
-
-            Console.ReadKey();
-            Menu();
+            decimal valor = 0;
+            return decimal.TryParse(Console.ReadLine(), System.Globalization.NumberStyles.AllowDecimalPoint, null, out valor)
+                ? valor
+                : throw new InvalidOperationException("Entrada inválida!");
         }
-
-        static void Subtracao()
-        {
-            Console.Clear();
-
-            Console.WriteLine("Primeiro valor: ");
-            float v1 = float.Parse(Console.ReadLine());
-
-            Console.WriteLine("Segundo valor: ");
-            float v2 = float.Parse(Console.ReadLine());
-
-            Console.WriteLine("");
-
-            float resultado = v1 - v2;
-            Console.WriteLine($"O resultado da subtração é {resultado}");
-
-            Console.ReadKey();
-            Menu();
-        }
-
-        static void Divisao()
-        {
-            Console.Clear();
-
-            Console.WriteLine("Primeiro valor: ");
-            float v1 = float.Parse(Console.ReadLine());
-
-            Console.WriteLine("Segundo valor: ");
-            float v2 = float.Parse(Console.ReadLine());
-
-            Console.WriteLine("");
-
-            float resultado = v1 / v2;
-            Console.WriteLine($"O resultado da divisao é {resultado}");
-
-            Console.ReadKey();
-            Menu();
-        }
-
-        static void Multiplicacao()
-        {
-            Console.Clear();
-
-            Console.WriteLine("Primeiro valor: ");
-            float v1 = float.Parse(Console.ReadLine());
-
-            Console.WriteLine("Segundo valor: ");
-            float v2 = float.Parse(Console.ReadLine());
-
-            Console.WriteLine("");
-
-            float resultado = v1 * v2;
-            Console.WriteLine($"O resultado da multiplicacao é {resultado}");
-
-            Console.ReadKey();
-            Menu();
-        }
-
     }
 }
