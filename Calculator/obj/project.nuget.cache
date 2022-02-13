@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AoviEBPXXrRetZ33kogsP8EdEkCiYSEzY1KJIRQOWjuQ5FAmD6XrO7HOouX8NXdA87GjlYQf9hUTO2laQVMYeQ==",
+  "dgSpecHash": "iyIRgklEFmftEPMJacNoj+RUn1gvTYtkZoylmWozsPstk+4yz+1fiBiRhXlw3M8NK6UWGdf1XRAUMqv2DdOcvw==",
   "success": true,
-  "projectFilePath": "C:\\dev\\Calculator\\Calculator.csproj",
+  "projectFilePath": "/home/zier/csharp-workspace/PedroZier/CSharp/Calculator/Calculator.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
