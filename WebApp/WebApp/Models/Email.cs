@@ -2,7 +2,14 @@
 {
     public abstract class Email
     {
-        private string address { get; }
+        public String Address { get; private set; }
+
+        public Email() { }
+
+        public Email(string address)
+        {
+            this.Address = address;
+        }
 
     }
 }

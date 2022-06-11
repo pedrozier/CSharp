@@ -2,6 +2,13 @@
 {
     public abstract class Phone
     {
-        public string PhoneNumber { get; }
+        public String PhoneNumber { get; private set; }
+
+        public Phone() { }
+
+        public Phone(string phoneNumber)
+        {
+            PhoneNumber = phoneNumber;
+        }
     }
 }
