@@ -1,4 +1,6 @@
-using Mediator.Repositories;
+using Mediator.Data;
+using MediatR;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,7 +11,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
-
+builder.Services.AddDbContext<PessoaDbContext>(o => o.UseInMemoryDatabase("Pessoas"));
+builder.Services.AddMediatR(typeof(PessoaDbContext).Assembly);
 
 var app = builder.Build();
 

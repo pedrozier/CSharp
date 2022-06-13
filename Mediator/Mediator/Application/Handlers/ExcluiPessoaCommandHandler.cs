@@ -1,7 +1,7 @@
 ﻿using Mediator.Application.Commands;
 using Mediator.Application.Models;
 using Mediator.Application.Notifications;
-using Mediator.Repositories;
+using Mediator.Data;
 using MediatR;
 
 namespace Mediator.Application.Handlers
@@ -9,11 +9,11 @@ namespace Mediator.Application.Handlers
     public class ExcluiPessoaCommandHandler : IRequestHandler<ExcluiPessoaCommand, string>
     {
         private readonly IMediator _mediator;
-        private readonly IRepository<Pessoa> _repository;
-        public ExcluiPessoaCommandHandler(IMediator mediator, IRepository<Pessoa> repository)
+        private readonly PessoaDbContext _context;
+        public ExcluiPessoaCommandHandler(IMediator mediator, PessoaDbContext context)
         {
             this._mediator = mediator;
-            this._repository = repository;
+            this._context = context;
         }
 
         public async Task<string> Handle(ExcluiPessoaCommand request, CancellationToken cancellationToken)
@@ -21,7 +21,10 @@ namespace Mediator.Application.Handlers
             try
             {
 
-                await _repository.Delete(request.Id);
+                var pessoa = await _context.Pessoas.FindAsync(request.Id);
+
+                _context.Pessoas.Remove(pessoa);
+                await _context.SaveChangesAsync();
 
                 await _mediator.Publish(new PessoaExcluidaNotification { Id = request.Id, IsEfetivado = true });
 

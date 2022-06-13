@@ -1,9 +1,10 @@
 ﻿using Mediator.Application.Commands;
 using Mediator.Application.Models;
-using Mediator.Repositories;
+using Mediator.Data;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Mediator.Controllers
 {
@@ -12,24 +13,22 @@ namespace Mediator.Controllers
     public class PessoaController : ControllerBase
     {
         private readonly IMediator _mediator;
-        private readonly IRepository<Pessoa> _repository;
+        private readonly PessoaDbContext _context;
 
-        public PessoaController(IMediator mediator, IRepository<Pessoa> repository)
+        public PessoaController(IMediator mediator, PessoaDbContext context)
         {
             this._mediator = mediator;
-            this._repository = repository;
+            this._context = context;
         }
 
         [HttpGet]
-        public async Task<IActionResult> Get()
-        {
-            return Ok(await _repository.GetAll());
-        }
+        public async Task<IEnumerable<Pessoa>> Get() => await _context.Pessoas.ToListAsync();
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> Get(int id)
+        public async Task<IActionResult> GetById(int id)
         {
-            return Ok(await _repository.Get(id));
+            var issue = await _context.Pessoas.FindAsync(id);
+            return issue == null ? NotFound() : Ok(issue);
         }
 
         [HttpPost]

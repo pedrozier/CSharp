@@ -31,3 +31,4 @@ C:\Users\zier\source\repos\Mediator\Mediator\obj\Debug\net6.0\refint\Mediator.dl
 C:\Users\zier\source\repos\Mediator\Mediator\obj\Debug\net6.0\Mediator.pdb
 C:\Users\zier\source\repos\Mediator\Mediator\obj\Debug\net6.0\Mediator.genruntimeconfig.cache
 C:\Users\zier\source\repos\Mediator\Mediator\obj\Debug\net6.0\ref\Mediator.dll
+C:\Users\zier\source\repos\Mediator\Mediator\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll

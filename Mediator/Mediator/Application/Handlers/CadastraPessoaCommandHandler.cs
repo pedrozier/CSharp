@@ -1,7 +1,7 @@
 ﻿using Mediator.Application.Commands;
 using Mediator.Application.Models;
 using Mediator.Application.Notifications;
-using Mediator.Repositories;
+using Mediator.Data;
 using MediatR;
 
 namespace Mediator.Application.Handlers
@@ -10,12 +10,12 @@ namespace Mediator.Application.Handlers
     {
 
         private readonly IMediator _mediator;
-        private readonly IRepository<Pessoa> _repository;
+        private readonly PessoaDbContext _context;
 
-        public CadastraPessoaCommandHandler(IMediator mediator, IRepository<Pessoa> reepository)
+        public CadastraPessoaCommandHandler(IMediator mediator, PessoaDbContext context)
         {
             this._mediator = mediator;
-            this._repository = reepository;
+            this._context = context;
         }
 
         public async Task<string> Handle(CadastraPessoaCommand request, CancellationToken cancellationToken)
@@ -24,7 +24,8 @@ namespace Mediator.Application.Handlers
 
             try {
 
-                await _repository.Add(pessoa);
+                await _context.Pessoas.AddAsync(pessoa);
+                await _context.SaveChangesAsync();
 
                 await _mediator.Publish(new PessoaCriadaNotification { Id = pessoa.Id, Nome = pessoa.Nome, Idade = pessoa.Idade, Sexo = pessoa.Sexo });
 

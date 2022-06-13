@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Kh0Qxfvf5DCp0qhEJcCH2NERk1BQfbPimmH5t8S07M6rQii9iPavPMvd2cQWfDS6Y/+FfzrGqxQjyxnRYW0yng==",
+  "dgSpecHash": "msdCKnEmMgh38+QPy9FtUalj7ewQytsli6aiHzaYvAfb8aLiTGpnL0YPjJNNhjKhNd47ycl4ST9LqdgzliyueA==",
   "success": true,
   "projectFilePath": "C:\\Users\\zier\\source\\repos\\Mediator\\Mediator\\Mediator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zier\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
     "C:\\Users\\zier\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\zier\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\10.0.1\\mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",
     "C:\\Users\\zier\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.5\\microsoft.entityframeworkcore.6.0.5.nupkg.sha512",
     "C:\\Users\\zier\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.5\\microsoft.entityframeworkcore.abstractions.6.0.5.nupkg.sha512",
     "C:\\Users\\zier\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.5\\microsoft.entityframeworkcore.analyzers.6.0.5.nupkg.sha512",

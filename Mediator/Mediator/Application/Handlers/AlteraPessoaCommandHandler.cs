@@ -1,19 +1,20 @@
 ﻿using Mediator.Application.Commands;
 using Mediator.Application.Models;
 using Mediator.Application.Notifications;
-using Mediator.Repositories;
+using Mediator.Data;
 using MediatR;
+using Microsoft.EntityFrameworkCore;
 
 namespace Mediator.Application.Handlers
 {
     public class AlteraPessoaCommandHandler : IRequestHandler<AlteraPessoaCommand, string>
     {
         private readonly IMediator _mediator;
-        private readonly IRepository<Pessoa> _repository;
-        public AlteraPessoaCommandHandler(IMediator mediator, IRepository<Pessoa> repository)
+        private readonly PessoaDbContext _context;
+        public AlteraPessoaCommandHandler(IMediator mediator, PessoaDbContext context)
         {
             this._mediator = mediator;
-            this._repository = repository;
+            this._context = context;
         }
 
         public async Task<string> Handle(AlteraPessoaCommand request, CancellationToken cancellationToken)
@@ -23,7 +24,9 @@ namespace Mediator.Application.Handlers
             try
             {
 
-                await _repository.Edit(pessoa);
+                _context.Entry(pessoa).State = EntityState.Modified;
+                await _context.SaveChangesAsync();
+
 
                 await _mediator.Publish(new PessoaAlteradaNotification { Id = pessoa.Id, Nome = pessoa.Nome, Idade = pessoa.Idade, Sexo = pessoa.Sexo, IsEfetivado = true });
 
