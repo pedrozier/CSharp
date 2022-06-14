@@ -1,5 +1,6 @@
 ﻿using Mediator.Application.Commands;
 using Mediator.Application.Models;
+using Mediator.Application.Query;
 using Mediator.Data;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -22,13 +23,21 @@ namespace Mediator.Controllers
         }
 
         [HttpGet]
-        public async Task<IEnumerable<Pessoa>> Get() => await _context.Pessoas.ToListAsync();
+        public async Task<IActionResult> FindAll()
+        {
+            ProcuraTodasPessoasQuery query = new ProcuraTodasPessoasQuery();
+            var response = await _mediator.Send(query);
+            return Ok(response);
+
+        }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var issue = await _context.Pessoas.FindAsync(id);
-            return issue == null ? NotFound() : Ok(issue);
+            ProcuraPessoaIdQuery query = new ProcuraPessoaIdQuery();
+            query.Id = id;
+            var response = await _mediator.Send(query);
+            return Ok(response);
         }
 
         [HttpPost]
