@@ -2,7 +2,7 @@
 
 namespace HateoasAPI.Application.Notifications
 {
-    public class ProductUdatedNotification : INotification
+    public class ProductUpdatedNotification : INotification
     {
         public int Id { get; set; }
 

@@ -3,6 +3,7 @@ using HateoasAPI.Application.Command;
 using HateoasAPI.Application.Models;
 using HateoasAPI.Data;
 using MediatR;
+using HateoasAPI.Application.Notifications;
 
 namespace HateoasAPI.Application.Handlers
 {
@@ -25,11 +26,13 @@ public async Task<string> Handle(UpdateProductCommand request, CancellationToken
                 _context.Entry(product).State = EntityState.Modified;
                 await _context.SaveChangesAsync();
 
-                await _mediator.Publish(new ProductUdatedNotification { Id = product.Id, ProductName = product.ProductName, ProductPrice = product.ProductPrice });
+                await _mediator.Publish(new ProductUpdatedNotification { Id = product.Id, ProductName = product.ProductName, ProductPrice = product.ProductPrice });
             }
             catch(Exception ex)
             {
-
+                await _mediator.Publish(new ProductUpdatedNotification { Id = product.Id, ProductName = product.ProductName, ProductPrice = product.ProductPrice });
+                await _mediator.Publish(new ErrorNotification { ExceptionName = ex.Message, Stack = ex.StackTrace });
+                return await Task.FromResult("An Error has Occurred");
             }
 
             throw new NotImplementedException();

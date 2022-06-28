@@ -3,7 +3,7 @@ using HateoasAPI.Application.Notifications;
 
 namespace HateoasAPI.Application.EventHandlers
 {
-    public class LogEventHandler : INotificationHandler<ErrorNotification>, INotificationHandler<ProductDeletedNotification>, INotificationHandler<ProductRegisteredNotification>, INotificationHandler<ProductUdatedNotification>
+    public class LogEventHandler : INotificationHandler<ErrorNotification>, INotificationHandler<ProductDeletedNotification>, INotificationHandler<ProductRegisteredNotification>, INotificationHandler<ProductUpdatedNotification>
     {
         public Task Handle(ErrorNotification notification, CancellationToken cancellationToken)
         {
@@ -15,17 +15,26 @@ namespace HateoasAPI.Application.EventHandlers
 
         public Task Handle(ProductDeletedNotification notification, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            return Task.Run(() =>
+            {
+                Console.WriteLine($"DELETED: '{notification.Id}'");
+            });
         }
 
         public Task Handle(ProductRegisteredNotification notification, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            return Task.Run(() =>
+            {
+                Console.WriteLine($"CREATED: '{notification.Id} - {notification.ProductName} - {notification.ProductPrice}'");
+            });
         }
 
-        public Task Handle(ProductUdatedNotification notification, CancellationToken cancellationToken)
+        public Task Handle(ProductUpdatedNotification notification, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            return Task.Run(() =>
+            {
+                Console.WriteLine($"UPDATED: '{notification.Id} - {notification.ProductName} - {notification.ProductPrice}'");
+            });
         }
     }
 }
