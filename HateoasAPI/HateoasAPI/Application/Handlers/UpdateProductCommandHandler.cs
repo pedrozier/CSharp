@@ -35,8 +35,6 @@ public async Task<string> Handle(UpdateProductCommand request, CancellationToken
                 return await Task.FromResult("An Error has Occurred");
             }
 
-            throw new NotImplementedException();
-
         }
     }
 }

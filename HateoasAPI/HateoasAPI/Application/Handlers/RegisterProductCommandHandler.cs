@@ -35,8 +35,6 @@ namespace HateoasAPI.Application.Handlers
                 await _mediator.Publish(new ErrorNotification { ExceptionName = ex.Message, Stack = ex.StackTrace });
                 return await Task.FromResult("An Error has Occurred");
             }
-
-            throw new NotImplementedException();
         }
     }
 }
