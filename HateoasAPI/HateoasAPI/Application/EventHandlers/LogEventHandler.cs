@@ -17,7 +17,7 @@ namespace HateoasAPI.Application.EventHandlers
         {
             return Task.Run(() =>
             {
-                Console.WriteLine($"DELETED: '{notification.Id}'");
+                Console.WriteLine($"DELETED: '{notification.Id} - DELETED? {notification.isEffective}'");
             });
         }
 

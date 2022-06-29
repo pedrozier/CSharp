@@ -27,6 +27,8 @@ public async Task<string> Handle(UpdateProductCommand request, CancellationToken
                 await _context.SaveChangesAsync();
 
                 await _mediator.Publish(new ProductUpdatedNotification { Id = product.Id, ProductName = product.ProductName, ProductPrice = product.ProductPrice });
+
+                return await Task.FromResult("Product Updated with Success");
             }
             catch(Exception ex)
             {

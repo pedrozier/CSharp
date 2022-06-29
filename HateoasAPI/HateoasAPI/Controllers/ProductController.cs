@@ -49,9 +49,8 @@ namespace HateoasAPI.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var obj = new DeleteProductCommand { Id = id };
-            var result = await _mediator.Send(obj);
-            return Ok(result);
+            await _mediator.Send(new DeleteProductCommand { Id = id });
+            return NoContent();
         }
     }
 

@@ -1,6 +1,6 @@
 ﻿namespace HateoasAPI.Application.Models
 {
-    public class Product
+    public class Product : Source
     {
 
         public int Id { get; set; }
