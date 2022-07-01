@@ -2,6 +2,6 @@
 {
     public class Source
     {
-        public List<LinkDTO> Links { get; set; } = new List<LinkDTO>();
+        public int Id { get; set; }
     }
 }

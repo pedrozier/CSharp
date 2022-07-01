@@ -24,8 +24,8 @@ namespace HateoasAPI.Controllers
         [HttpGet]
         public async Task<IEnumerable<Product>> GetAll() => await _context.Products.ToListAsync();
 
-        [HttpGet("{id}")]
 
+        [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
             var product = await _context.Products.FindAsync(id);

@@ -32,3 +32,7 @@ C:\Users\zier\source\repos\HateoasAPI\HateoasAPI\obj\Debug\net6.0\refint\Hateoas
 C:\Users\zier\source\repos\HateoasAPI\HateoasAPI\obj\Debug\net6.0\HateoasAPI.pdb
 C:\Users\zier\source\repos\HateoasAPI\HateoasAPI\obj\Debug\net6.0\HateoasAPI.genruntimeconfig.cache
 C:\Users\zier\source\repos\HateoasAPI\HateoasAPI\obj\Debug\net6.0\ref\HateoasAPI.dll
+C:\Users\zier\source\repos\HateoasAPI\HateoasAPI\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\zier\source\repos\HateoasAPI\HateoasAPI\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\zier\source\repos\HateoasAPI\HateoasAPI\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\zier\source\repos\HateoasAPI\HateoasAPI\bin\Debug\net6.0\Newtonsoft.Json.dll

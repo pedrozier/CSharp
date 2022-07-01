@@ -20,16 +20,22 @@ namespace HateoasAPI.Application.Handlers
         {
             try
             {
-
                 var product = await _context.Products.FindAsync(request.Id);
 
-                _context.Products.Remove(product);
-                await _context.SaveChangesAsync();
+                if (product != null)
+                {
+                    _context.Products.Remove(product);
+                    await _context.SaveChangesAsync();
 
-                await _mediator.Publish(new ProductDeletedNotification { Id = request.Id, isEffective = true });
+                    await _mediator.Publish(new ProductDeletedNotification { Id = request.Id, isEffective = true });
 
-                return await Task.FromResult("Product Deleted");
-
+                    return await Task.FromResult("Product Deleted");
+                }
+                else
+                {
+                    await _mediator.Publish(new ProductDeletedNotification { Id = request.Id, isEffective = false });
+                    return await Task.FromResult("Product is NULL");    
+                }
             } 
             catch(Exception ex)
             {
