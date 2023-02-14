@@ -1,0 +1,15 @@
+C:\Users\zier\Desktop\Vincit\Logica de proramacao\ConsoleApp\bin\Debug\net6.0\ConsoleApp.exe
+C:\Users\zier\Desktop\Vincit\Logica de proramacao\ConsoleApp\bin\Debug\net6.0\ConsoleApp.deps.json
+C:\Users\zier\Desktop\Vincit\Logica de proramacao\ConsoleApp\bin\Debug\net6.0\ConsoleApp.runtimeconfig.json
+C:\Users\zier\Desktop\Vincit\Logica de proramacao\ConsoleApp\bin\Debug\net6.0\ConsoleApp.dll
+C:\Users\zier\Desktop\Vincit\Logica de proramacao\ConsoleApp\bin\Debug\net6.0\ConsoleApp.pdb
+C:\Users\zier\Desktop\Vincit\Logica de proramacao\ConsoleApp\obj\Debug\net6.0\ConsoleApp.csproj.AssemblyReference.cache
+C:\Users\zier\Desktop\Vincit\Logica de proramacao\ConsoleApp\obj\Debug\net6.0\ConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zier\Desktop\Vincit\Logica de proramacao\ConsoleApp\obj\Debug\net6.0\ConsoleApp.AssemblyInfoInputs.cache
+C:\Users\zier\Desktop\Vincit\Logica de proramacao\ConsoleApp\obj\Debug\net6.0\ConsoleApp.AssemblyInfo.cs
+C:\Users\zier\Desktop\Vincit\Logica de proramacao\ConsoleApp\obj\Debug\net6.0\ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\zier\Desktop\Vincit\Logica de proramacao\ConsoleApp\obj\Debug\net6.0\ConsoleApp.dll
+C:\Users\zier\Desktop\Vincit\Logica de proramacao\ConsoleApp\obj\Debug\net6.0\refint\ConsoleApp.dll
+C:\Users\zier\Desktop\Vincit\Logica de proramacao\ConsoleApp\obj\Debug\net6.0\ConsoleApp.pdb
+C:\Users\zier\Desktop\Vincit\Logica de proramacao\ConsoleApp\obj\Debug\net6.0\ConsoleApp.genruntimeconfig.cache
+C:\Users\zier\Desktop\Vincit\Logica de proramacao\ConsoleApp\obj\Debug\net6.0\ref\ConsoleApp.dll
