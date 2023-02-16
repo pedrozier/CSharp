@@ -2,19 +2,18 @@
 namespace ConsoleApp
 {
 
-    public class Program //clase principal
+    public class Program 
     {
-        private const string NOMESSAGE = ""; //constante representando um texto vazio
-
-        public static UnitOfWorkImpl unitOfWork = new UnitOfWorkImpl(); // nova instancia de objeto (responsavel por gerenciar a persistencia outro objeto)
-        public static void Main(string[] args) // metodo principal
+        private const string NOMESSAGE = ""; 
+        public static UnitOfWorkImpl unitOfWork = new UnitOfWorkImpl(); 
+        public static void Main(string[] args) 
         {
-            Menu(NOMESSAGE); // chamada de metodo (para iniciar o programa)
+            Menu(NOMESSAGE); 
         }
 
-        public static void Menu(string returningMessage) // metodo statico (não nessecita de instancia para ser utilizado)
+        public static void Menu(string returningMessage) 
         {
-            Console.Clear(); // limpa tela e escreve o banner
+            Console.Clear(); 
             Console.WriteLine(" __  __         ____                                      ");
             Console.WriteLine("|  \\/  |_   _  |  _ \\ _ __ ___   __ _ _ __ __ _ _ __ ___  ");
             Console.WriteLine("| |\\/| | | | | | |_) | '__/ _ \\ / _` | '__/ _` | '_ ` _ \\ ");
@@ -23,37 +22,37 @@ namespace ConsoleApp
             Console.WriteLine("        |___/                   |___/                     ");
             Console.WriteLine(" (v 0.0.1)   (com mais firulas do que nunca!)");
 
-            Console.WriteLine("\n" + returningMessage + "\n"); // mensagem contendo resultado
+            Console.WriteLine("\n" + returningMessage + "\n"); 
 
-            //descrição do menu
+            
             Console.WriteLine("1 - tenho dinheiro pra sair?");
             Console.WriteLine("2 - configurações do CRUD");
             Console.WriteLine("0 - sair do programa");
 
             Console.WriteLine("");
 
-            char value = Console.ReadKey().KeyChar; // pega apenas uma tecla de input (o que evita a criação de uma string)
+            char value = Console.ReadKey().KeyChar; 
 
             switch (value)
-            { // switch/case 
+            { 
                 case '1':
-                    CheckValue(); // metodo contendo a parte principal do programa
+                    CheckValue(); 
                     break;
                 case '2':
-                    Configuration(NOMESSAGE); // crud de locais para sair
+                    Configuration(NOMESSAGE); 
                     break;
                 case '0':
-                    System.Environment.Exit(0); // fecha o programa
+                    System.Environment.Exit(0); 
                     break;
                 default:
-                    Menu("Por favor selecione uma opção valida!"); // volta ao menu
+                    Menu("Por favor selecione uma opção valida!"); 
                     break;
             }
         }
 
-        public static void CheckValue() // metodo estatico
+        public static void CheckValue() 
         {
-            float value = 0; // variavel local (disponivel apenas para o escopo do metodo)
+            float value = 0; 
 
             Console.WriteLine("\nQuanto dinheiro voçê tem?");
 
@@ -61,14 +60,14 @@ namespace ConsoleApp
 
             if (float.TryParse(line, out value))
             {
-                List<Place> places = unitOfWork.FindAll(); // preenche a lista local com a de 'unityofwork'
+                List<Place> places = unitOfWork.FindAll(); 
 
-                if (places.Any()) // verifica se a lista esta vazia
+                if (places.Any()) 
                 {
 
                     foreach (Place place in places)
                     {
-                        if (place.Price <= value) //escreve apenas os lugares que estão abaixo do dinheiro informado
+                        if (place.Price <= value) 
                         {
                             Console.WriteLine("{ Nome: " + place.Name + " | Preço: " + place.Price + " }");
                         }
@@ -86,7 +85,7 @@ namespace ConsoleApp
             }
         }
 
-        public static void Configuration(string returningMessage) // CRUD
+        public static void Configuration(string returningMessage) 
         {
             Console.Clear();
             Console.WriteLine("   ___ ___ _   _ ___  ");
@@ -129,7 +128,7 @@ namespace ConsoleApp
             }
         }
 
-        public static void SeeAll() // tela que lista os objetos salvos
+        public static void SeeAll() 
         {
             Console.Clear();
             unitOfWork.FindAll().ForEach(p => Console.WriteLine(p.toString()));
@@ -138,7 +137,7 @@ namespace ConsoleApp
             Configuration(NOMESSAGE);
         }
 
-        public static void Save() // tela para salvar objetos
+        public static void Save() 
         {
             Place place = new Place();
 
@@ -162,7 +161,7 @@ namespace ConsoleApp
             Configuration("Valores invalidos!");
         }
 
-        public static void Update() // tela para atualizar objetos
+        public static void Update() 
         {
             Place place = new Place();
 
@@ -192,7 +191,7 @@ namespace ConsoleApp
             Configuration("Valores invalidos!");
         }
 
-        public static void Delete() // tela para deletar objetos
+        public static void Delete() 
         {
             Console.Clear();
             unitOfWork.FindAll().ForEach(p => Console.WriteLine(p.toString()));
@@ -208,19 +207,19 @@ namespace ConsoleApp
     }
 
 
-    public class Place // entidade (objeto a ser persistido)
+    public class Place 
     {
         public int Id { get; set; }
         public string Name { get; set; }
         public float Price { get; set; }
 
-        public string toString() //metodo para string (escreve os valores do objeto de forma padronizada)
+        public string toString() 
         {
             return "{ id: " + Id + " Lugar: " + Name + ", Preço: " + Price + " }";
         }
     }
 
-    public interface IUnitOfWork<T> //interface (molde para uma clase concreta) "nao pode ser instanciada"
+    public interface IUnitOfWork<T> 
     {
 
         List<T> FindAll();
@@ -230,9 +229,9 @@ namespace ConsoleApp
         void Delete(int id);
     }
 
-    public class UnitOfWorkImpl : IUnitOfWork<Place> //Implementação da interface (clase concreta com todos os metodos de sua interface)
+    public class UnitOfWorkImpl : IUnitOfWork<Place> 
     {
-        private List<Place> places = new List<Place>(); // nova instancia de objeto
+        private List<Place> places = new List<Place>(); 
 
         public void Delete(int id)
         {
@@ -272,7 +271,7 @@ namespace ConsoleApp
         }
     }
 
-    public sealed class IdGenerator //clase que gera ids de forma sequencial (para que eventualmente não se repitam) "Singleton"
+    public sealed class IdGenerator 
     {
         private static IdGenerator instance = null;
         private static readonly object locker = new object();
