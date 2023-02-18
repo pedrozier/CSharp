@@ -234,7 +234,6 @@ namespace ConsoleApp
 
     }
 
-    [Serializable]
     public class Place
     {
         public int Id { get; set; }
