@@ -1,61 +1,60 @@
-﻿using System;
+using System;
 namespace ConsoleApp
 {
 
-    public class Program 
+    public class Program
     {
-        private const string NOMESSAGE = ""; 
-        public static UnitOfWorkImpl unitOfWork = new UnitOfWorkImpl(); 
-        public static void Main(string[] args) 
+        private const string NOMESSAGE = "";
+        public static UnitOfWorkImpl unitOfWork = new UnitOfWorkImpl();
+        public static void Main(string[] args)
         {
-            Menu(NOMESSAGE); 
+            Menu(NOMESSAGE);
         }
 
-        public static void Menu(string returningMessage) 
+        public static void Menu(string returningMessage)
         {
-
-
-
-
-                                                                                                   
-            Console.Clear(); 
+            Console.Clear();
             Console.WriteLine("  _____         _          ___  _      _        _           ___                 ___       _    ___ ");
-            Console.WriteLine(" |_   _|__ _ _ | |_  ___  |   \\(_)_ _ | |_  ___(_)_ _ ___  | _ \__ _ _ _ __ _  / __| __ _(_)_ |__ \\");
-            Console.WriteLine("   | |/ -_) ' \\| ' \\/ _ \ | |) | | ' \\| ' \\/ -_) | '_/ _ \\ |  _/ _` | '_/ _` | \\__ \\/ _` | | '_|/_/");
-            Console.WriteLine("   |_|\\___|_||_|_||_\\___/ |___/|_|_||_|_||_\___|_|_| \\___/ |_| \__,_|_| \__,_| |___/\__,_|_|_| (_) ");
-            Console.WriteLine(" (v 0.0.1)   (com mais firulas do que nunca!)");
+            Console.WriteLine(" |_   _|__ _ _ | |_  ___  |   \\(_)_ _ | |_  ___(_)_ _ ___  | _ \\__ _ _ _ __ _  / __| __ _(_)_ |__ \\");
+            Console.WriteLine("   | |/ -_) ' \\| ' \\/ _ \\ | |) | | ' \\| ' \\/ -_) | '_/ _ \\ |  _/ _` | '_/ _` | \\__ \\/ _` | | '_|/_/");
+            Console.WriteLine("   |_|\\___|_||_|_||_\\___/ |___/|_|_||_|_||_\\___|_|_| \\___/ |_| \\__,_|_| \\__,_| |___/\\__,_|_|_| (_) ");
+            Console.WriteLine("                                                                (com mais firulas do que nunca!)");
 
-            Console.WriteLine("\n" + returningMessage + "\n"); 
+            Console.WriteLine("\n" + returningMessage + "\n");
 
-            
+
             Console.WriteLine("1 - tenho dinheiro pra sair?");
             Console.WriteLine("2 - configurações do CRUD");
+            Console.WriteLine("3 - sobre");
             Console.WriteLine("0 - sair do programa");
 
             Console.WriteLine("");
 
-            char value = Console.ReadKey().KeyChar; 
+            char value = Console.ReadKey().KeyChar;
 
             switch (value)
-            { 
+            {
                 case '1':
-                    CheckValue(); 
+                    CheckValue();
                     break;
                 case '2':
-                    Configuration(NOMESSAGE); 
+                    Configuration(NOMESSAGE);
+                    break;
+                case '3':
+                    About(NOMESSAGE);
                     break;
                 case '0':
-                    System.Environment.Exit(0); 
+                    System.Environment.Exit(0);
                     break;
                 default:
-                    Menu("Por favor selecione uma opção valida!"); 
+                    Menu("Por favor selecione uma opção valida!");
                     break;
             }
         }
 
-        public static void CheckValue() 
+        public static void CheckValue()
         {
-            float value = 0; 
+            float value = 0;
 
             Console.WriteLine("\nQuanto dinheiro voçê tem?");
 
@@ -63,14 +62,14 @@ namespace ConsoleApp
 
             if (float.TryParse(line, out value))
             {
-                List<Place> places = unitOfWork.FindAll(); 
+                List<Place> places = unitOfWork.FindAll();
 
-                if (places.Any()) 
+                if (places.Any())
                 {
 
                     foreach (Place place in places)
                     {
-                        if (place.Price <= value) 
+                        if (place.Price <= value)
                         {
                             Console.WriteLine("{ Nome: " + place.Name + " | Preço: " + place.Price + " }");
                         }
@@ -88,7 +87,7 @@ namespace ConsoleApp
             }
         }
 
-        public static void Configuration(string returningMessage) 
+        public static void Configuration(string returningMessage)
         {
             Console.Clear();
             Console.WriteLine("   ___ ___ _   _ ___  ");
@@ -131,7 +130,7 @@ namespace ConsoleApp
             }
         }
 
-        public static void SeeAll() 
+        public static void SeeAll()
         {
             Console.Clear();
             unitOfWork.FindAll().ForEach(p => Console.WriteLine(p.toString()));
@@ -140,7 +139,7 @@ namespace ConsoleApp
             Configuration(NOMESSAGE);
         }
 
-        public static void Save() 
+        public static void Save()
         {
             Place place = new Place();
 
@@ -164,7 +163,7 @@ namespace ConsoleApp
             Configuration("Valores invalidos!");
         }
 
-        public static void Update() 
+        public static void Update()
         {
             Place place = new Place();
 
@@ -194,7 +193,7 @@ namespace ConsoleApp
             Configuration("Valores invalidos!");
         }
 
-        public static void Delete() 
+        public static void Delete()
         {
             Console.Clear();
             unitOfWork.FindAll().ForEach(p => Console.WriteLine(p.toString()));
@@ -207,22 +206,40 @@ namespace ConsoleApp
             }
             Configuration("Valor invalido!");
         }
+        public static void About(string returningMessage)
+        {
+            Console.Clear();
+            Console.WriteLine(" ___      _            ");
+            Console.WriteLine("/ __| ___| |__ _ _ ___ ");
+            Console.WriteLine("\\__ \\/ _ \\ '_ \\ '_/ -_)");
+            Console.WriteLine("|___/\\___/_.__/_| \\___|");
+
+            Console.WriteLine("\n" + returningMessage + "\n");
+
+            Console.WriteLine("   Desenvolvido por Pedro Zier");
+            Console.WriteLine("Github https://github.com/pedrozier");
+
+            Console.WriteLine("\n0 - voltar");
+            Console.ReadKey();
+            Menu(NOMESSAGE);
+
+        }
+
     }
 
-
-    public class Place 
+    public class Place
     {
         public int Id { get; set; }
         public string Name { get; set; }
         public float Price { get; set; }
 
-        public string toString() 
+        public string toString()
         {
             return "{ id: " + Id + " Lugar: " + Name + ", Preço: " + Price + " }";
         }
     }
 
-    public interface IUnitOfWork<T> 
+    public interface IUnitOfWork<T>
     {
 
         List<T> FindAll();
@@ -232,9 +249,9 @@ namespace ConsoleApp
         void Delete(int id);
     }
 
-    public class UnitOfWorkImpl : IUnitOfWork<Place> 
+    public class UnitOfWorkImpl : IUnitOfWork<Place>
     {
-        private List<Place> places = new List<Place>(); 
+        private List<Place> places = new List<Place>();
 
         public void Delete(int id)
         {
@@ -274,7 +291,7 @@ namespace ConsoleApp
         }
     }
 
-    public sealed class IdGenerator 
+    public sealed class IdGenerator
     {
         private static IdGenerator instance = null;
         private static readonly object locker = new object();
