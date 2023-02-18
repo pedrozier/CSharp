@@ -1,4 +1,6 @@
 using System;
+using System.Runtime.Serialization.Formatters.Binary;
+
 namespace ConsoleApp
 {
 
@@ -168,6 +170,9 @@ namespace ConsoleApp
             Place place = new Place();
 
             Console.Clear();
+
+            unitOfWork.FindAll().ForEach(p => Console.WriteLine(p.toString()));
+
             Console.WriteLine("Digite o novo nome do lugar/evento:");
             string line = Console.ReadLine();
             place.Name = line;
@@ -181,14 +186,17 @@ namespace ConsoleApp
             }
             line = null;
 
-            unitOfWork.FindAll().ForEach(p => Console.WriteLine(p.toString()));
             Console.WriteLine("\nInforme o Id do lugar para atualizar:");
             line = Console.ReadLine();
             if (int.TryParse(line, out int ivalue))
             {
                 place.Id = ivalue;
-                unitOfWork.Update(ivalue, place);
-                Configuration("atualizado com sucesso!");
+
+                if (unitOfWork.FindById(place.Id) != null)
+                {
+                    unitOfWork.Update(ivalue, place);
+                    Configuration("atualizado com sucesso!");
+                }
             }
             Configuration("Valores invalidos!");
         }
@@ -227,6 +235,7 @@ namespace ConsoleApp
 
     }
 
+    [Serializable]
     public class Place
     {
         public int Id { get; set; }
@@ -255,7 +264,8 @@ namespace ConsoleApp
 
         public void Delete(int id)
         {
-            places.Remove(FindById(id));
+            Place place = FindById(id);
+            places.Remove(place);
         }
 
         public List<Place> FindAll()
