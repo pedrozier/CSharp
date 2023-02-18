@@ -45,6 +45,7 @@ namespace ConsoleApp
                     About(NOMESSAGE);
                     break;
                 case '0':
+                    Console.Clear();
                     System.Environment.Exit(0);
                     break;
                 default:
@@ -210,8 +211,8 @@ namespace ConsoleApp
             {
                 if (unitOfWork.FindById(ivalue) != null)
                 {
-                unitOfWork.Delete(ivalue);
-                Configuration("deletado com sucesso!");
+                    unitOfWork.Delete(ivalue);
+                    Configuration("deletado com sucesso!");
                 }
             }
             Configuration("Valor invalido!");
@@ -226,8 +227,8 @@ namespace ConsoleApp
 
             Console.WriteLine("\n" + returningMessage + "\n");
 
-            Console.WriteLine("   Desenvolvido por Pedro Zier");
-            Console.WriteLine("Github https://github.com/pedrozier");
+            Console.WriteLine("Desenvolvido por Pedro Zier");
+            Console.ForegroundColor = ConsoleColor.Blue;  Console.Write($"\u001b]8;;{"https://github.com/pedrozier"}\u001b\\{"Github"}\u001b]8;;\u001b\\"); Console.ForegroundColor = ConsoleColor.Gray;
 
             Console.WriteLine("\n0 - voltar");
             Console.ReadKey();
