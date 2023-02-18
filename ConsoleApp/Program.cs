@@ -208,8 +208,11 @@ namespace ConsoleApp
             string line = Console.ReadLine();
             if (int.TryParse(line, out int ivalue))
             {
+                if (unitOfWork.FindById(ivalue) != null)
+                {
                 unitOfWork.Delete(ivalue);
                 Configuration("deletado com sucesso!");
+                }
             }
             Configuration("Valor invalido!");
         }
