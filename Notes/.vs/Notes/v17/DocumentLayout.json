@@ -1,0 +1,275 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\Notes\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4A20B357-0CDB-4579-8E0B-C29D0ACA34F9}|Notes\\Notes.csproj|c:\\users\\user\\source\\repos\\notes\\notes\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4A20B357-0CDB-4579-8E0B-C29D0ACA34F9}|Notes\\Notes.csproj|solutionrelative:notes\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A20B357-0CDB-4579-8E0B-C29D0ACA34F9}|Notes\\Notes.csproj|c:\\users\\user\\source\\repos\\notes\\notes\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A20B357-0CDB-4579-8E0B-C29D0ACA34F9}|Notes\\Notes.csproj|solutionrelative:notes\\appshell.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A20B357-0CDB-4579-8E0B-C29D0ACA34F9}|Notes\\Notes.csproj|c:\\users\\user\\source\\repos\\notes\\notes\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A20B357-0CDB-4579-8E0B-C29D0ACA34F9}|Notes\\Notes.csproj|solutionrelative:notes\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A20B357-0CDB-4579-8E0B-C29D0ACA34F9}|Notes\\Notes.csproj|c:\\users\\user\\source\\repos\\notes\\notes\\views\\notepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A20B357-0CDB-4579-8E0B-C29D0ACA34F9}|Notes\\Notes.csproj|solutionrelative:notes\\views\\notepage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A20B357-0CDB-4579-8E0B-C29D0ACA34F9}|Notes\\Notes.csproj|c:\\users\\user\\source\\repos\\notes\\notes\\views\\allnotespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A20B357-0CDB-4579-8E0B-C29D0ACA34F9}|Notes\\Notes.csproj|solutionrelative:notes\\views\\allnotespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A20B357-0CDB-4579-8E0B-C29D0ACA34F9}|Notes\\Notes.csproj|c:\\users\\user\\source\\repos\\notes\\notes\\views\\allnotespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4A20B357-0CDB-4579-8E0B-C29D0ACA34F9}|Notes\\Notes.csproj|solutionrelative:notes\\views\\allnotespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A20B357-0CDB-4579-8E0B-C29D0ACA34F9}|Notes\\Notes.csproj|c:\\users\\user\\source\\repos\\notes\\notes\\views\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4A20B357-0CDB-4579-8E0B-C29D0ACA34F9}|Notes\\Notes.csproj|solutionrelative:notes\\views\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A20B357-0CDB-4579-8E0B-C29D0ACA34F9}|Notes\\Notes.csproj|c:\\users\\user\\source\\repos\\notes\\notes\\views\\notepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4A20B357-0CDB-4579-8E0B-C29D0ACA34F9}|Notes\\Notes.csproj|solutionrelative:notes\\views\\notepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A20B357-0CDB-4579-8E0B-C29D0ACA34F9}|Notes\\Notes.csproj|c:\\users\\user\\source\\repos\\notes\\notes\\models\\allnotes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A20B357-0CDB-4579-8E0B-C29D0ACA34F9}|Notes\\Notes.csproj|solutionrelative:notes\\models\\allnotes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A20B357-0CDB-4579-8E0B-C29D0ACA34F9}|Notes\\Notes.csproj|c:\\users\\user\\source\\repos\\notes\\notes\\views\\aboutpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4A20B357-0CDB-4579-8E0B-C29D0ACA34F9}|Notes\\Notes.csproj|solutionrelative:notes\\views\\aboutpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A20B357-0CDB-4579-8E0B-C29D0ACA34F9}|Notes\\Notes.csproj|c:\\users\\user\\source\\repos\\notes\\notes\\models\\about.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A20B357-0CDB-4579-8E0B-C29D0ACA34F9}|Notes\\Notes.csproj|solutionrelative:notes\\models\\about.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A20B357-0CDB-4579-8E0B-C29D0ACA34F9}|Notes\\Notes.csproj|c:\\users\\user\\source\\repos\\notes\\notes\\views\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A20B357-0CDB-4579-8E0B-C29D0ACA34F9}|Notes\\Notes.csproj|solutionrelative:notes\\views\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A20B357-0CDB-4579-8E0B-C29D0ACA34F9}|Notes\\Notes.csproj|c:\\users\\user\\source\\repos\\notes\\notes\\views\\aboutpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A20B357-0CDB-4579-8E0B-C29D0ACA34F9}|Notes\\Notes.csproj|solutionrelative:notes\\views\\aboutpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A20B357-0CDB-4579-8E0B-C29D0ACA34F9}|Notes\\Notes.csproj|c:\\users\\user\\source\\repos\\notes\\notes\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4A20B357-0CDB-4579-8E0B-C29D0ACA34F9}|Notes\\Notes.csproj|solutionrelative:notes\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A20B357-0CDB-4579-8E0B-C29D0ACA34F9}|Notes\\Notes.csproj|c:\\users\\user\\source\\repos\\notes\\notes\\models\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A20B357-0CDB-4579-8E0B-C29D0ACA34F9}|Notes\\Notes.csproj|solutionrelative:notes\\models\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AllNotesPage.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Notes\\Notes\\Views\\AllNotesPage.xaml",
+              "RelativeDocumentMoniker": "Notes\\Views\\AllNotesPage.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Notes\\Notes\\Views\\AllNotesPage.xaml",
+              "RelativeToolTip": "Notes\\Views\\AllNotesPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-27T20:50:29.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AllNotes.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Notes\\Notes\\Models\\AllNotes.cs",
+              "RelativeDocumentMoniker": "Notes\\Models\\AllNotes.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Notes\\Notes\\Models\\AllNotes.cs",
+              "RelativeToolTip": "Notes\\Models\\AllNotes.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-27T20:49:41.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Notes\\Notes\\Views\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "Notes\\Views\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Notes\\Notes\\Views\\MainPage.xaml.cs",
+              "RelativeToolTip": "Notes\\Views\\MainPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-27T20:38:33.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "About.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Notes\\Notes\\Models\\About.cs",
+              "RelativeDocumentMoniker": "Notes\\Models\\About.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Notes\\Notes\\Models\\About.cs",
+              "RelativeToolTip": "Notes\\Models\\About.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-27T20:36:41.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Notes\\Notes\\App.xaml.cs",
+              "RelativeDocumentMoniker": "Notes\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Notes\\Notes\\App.xaml.cs",
+              "RelativeToolTip": "Notes\\App.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-27T20:31:31.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NotePage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Notes\\Notes\\Views\\NotePage.xaml.cs",
+              "RelativeDocumentMoniker": "Notes\\Views\\NotePage.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Notes\\Notes\\Views\\NotePage.xaml.cs",
+              "RelativeToolTip": "Notes\\Views\\NotePage.xaml.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAswDgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-27T20:26:13.035Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NotePage.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Notes\\Notes\\Views\\NotePage.xaml",
+              "RelativeDocumentMoniker": "Notes\\Views\\NotePage.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Notes\\Notes\\Views\\NotePage.xaml",
+              "RelativeToolTip": "Notes\\Views\\NotePage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-27T20:25:11.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Notes\\Notes\\Views\\MainPage.xaml",
+              "RelativeDocumentMoniker": "Notes\\Views\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Notes\\Notes\\Views\\MainPage.xaml",
+              "RelativeToolTip": "Notes\\Views\\MainPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-27T20:18:47.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Notes\\Notes\\AppShell.xaml",
+              "RelativeDocumentMoniker": "Notes\\AppShell.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Notes\\Notes\\AppShell.xaml",
+              "RelativeToolTip": "Notes\\AppShell.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAABvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-27T18:54:44.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AllNotesPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Notes\\Notes\\Views\\AllNotesPage.xaml.cs",
+              "RelativeDocumentMoniker": "Notes\\Views\\AllNotesPage.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Notes\\Notes\\Views\\AllNotesPage.xaml.cs",
+              "RelativeToolTip": "Notes\\Views\\AllNotesPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-27T20:51:16.006Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppShell.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Notes\\Notes\\AppShell.xaml.cs",
+              "RelativeDocumentMoniker": "Notes\\AppShell.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Notes\\Notes\\AppShell.xaml.cs",
+              "RelativeToolTip": "Notes\\AppShell.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-27T20:31:31.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Notes\\Notes\\App.xaml",
+              "RelativeDocumentMoniker": "Notes\\App.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Notes\\Notes\\App.xaml",
+              "RelativeToolTip": "Notes\\App.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-27T20:21:26.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Note.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Notes\\Notes\\Models\\Note.cs",
+              "RelativeDocumentMoniker": "Notes\\Models\\Note.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Notes\\Notes\\Models\\Note.cs",
+              "RelativeToolTip": "Notes\\Models\\Note.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-27T20:35:50.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AboutPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Notes\\Notes\\Views\\AboutPage.xaml.cs",
+              "RelativeDocumentMoniker": "Notes\\Views\\AboutPage.xaml.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Notes\\Notes\\Views\\AboutPage.xaml.cs",
+              "RelativeToolTip": "Notes\\Views\\AboutPage.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-27T18:45:01.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AboutPage.xaml",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\Notes\\Notes\\Views\\AboutPage.xaml",
+              "RelativeDocumentMoniker": "Notes\\Views\\AboutPage.xaml",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\Notes\\Notes\\Views\\AboutPage.xaml",
+              "RelativeToolTip": "Notes\\Views\\AboutPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-07-27T18:39:02.829Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
