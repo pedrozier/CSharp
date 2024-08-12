@@ -1,0 +1,362 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|c:\\users\\user\\desktop\\csharp\\mediator\\mediator\\application\\handlers\\procuratodaspessoasqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|solutionrelative:mediator\\application\\handlers\\procuratodaspessoasqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|c:\\users\\user\\desktop\\csharp\\mediator\\mediator\\application\\handlers\\procurapessoaidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|solutionrelative:mediator\\application\\handlers\\procurapessoaidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|c:\\users\\user\\desktop\\csharp\\mediator\\mediator\\application\\handlers\\excluipessoacommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|solutionrelative:mediator\\application\\handlers\\excluipessoacommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|c:\\users\\user\\desktop\\csharp\\mediator\\mediator\\application\\handlers\\cadastrapessoacommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|solutionrelative:mediator\\application\\handlers\\cadastrapessoacommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|c:\\users\\user\\desktop\\csharp\\mediator\\mediator\\application\\handlers\\alterapessoacommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|solutionrelative:mediator\\application\\handlers\\alterapessoacommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|c:\\users\\user\\desktop\\csharp\\mediator\\mediator\\application\\eventhandlers\\logeventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|solutionrelative:mediator\\application\\eventhandlers\\logeventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|c:\\users\\user\\desktop\\csharp\\mediator\\mediator\\application\\query\\procuratodaspessoasquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|solutionrelative:mediator\\application\\query\\procuratodaspessoasquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|c:\\users\\user\\desktop\\csharp\\mediator\\mediator\\application\\query\\procurapessoaidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|solutionrelative:mediator\\application\\query\\procurapessoaidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|c:\\users\\user\\desktop\\csharp\\mediator\\mediator\\application\\notifications\\pessoaprocuratodasnotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|solutionrelative:mediator\\application\\notifications\\pessoaprocuratodasnotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|c:\\users\\user\\desktop\\csharp\\mediator\\mediator\\application\\notifications\\pessoaprocuradanotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|solutionrelative:mediator\\application\\notifications\\pessoaprocuradanotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|c:\\users\\user\\desktop\\csharp\\mediator\\mediator\\application\\notifications\\pessoaalteradanotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|solutionrelative:mediator\\application\\notifications\\pessoaalteradanotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|c:\\users\\user\\desktop\\csharp\\mediator\\mediator\\application\\commands\\alterapessoacommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|solutionrelative:mediator\\application\\commands\\alterapessoacommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|c:\\users\\user\\desktop\\csharp\\mediator\\mediator\\controllers\\pessoacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|solutionrelative:mediator\\controllers\\pessoacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|c:\\users\\user\\desktop\\csharp\\mediator\\mediator\\application\\commands\\excluipessoacommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|solutionrelative:mediator\\application\\commands\\excluipessoacommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|c:\\users\\user\\desktop\\csharp\\mediator\\mediator\\application\\notifications\\erronotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|solutionrelative:mediator\\application\\notifications\\erronotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|c:\\users\\user\\desktop\\csharp\\mediator\\mediator\\application\\notifications\\pessoacriadanotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|solutionrelative:mediator\\application\\notifications\\pessoacriadanotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|c:\\users\\user\\desktop\\csharp\\mediator\\mediator\\application\\notifications\\pessoaexcluidanotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|solutionrelative:mediator\\application\\notifications\\pessoaexcluidanotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|c:\\users\\user\\desktop\\csharp\\mediator\\mediator\\application\\commands\\cadastrapessoacommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|solutionrelative:mediator\\application\\commands\\cadastrapessoacommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|c:\\users\\user\\desktop\\csharp\\mediator\\mediator\\application\\models\\pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|solutionrelative:mediator\\application\\models\\pessoa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|c:\\users\\user\\desktop\\csharp\\mediator\\mediator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|solutionrelative:mediator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|c:\\users\\user\\desktop\\csharp\\mediator\\mediator\\data\\pessoadbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D2680C86-C088-432A-90E1-BA622DC4B34F}|Mediator\\Mediator.csproj|solutionrelative:mediator\\data\\pessoadbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LogEventHandler.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Application\\EventHandlers\\LogEventHandler.cs",
+              "RelativeDocumentMoniker": "Mediator\\Application\\EventHandlers\\LogEventHandler.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Application\\EventHandlers\\LogEventHandler.cs",
+              "RelativeToolTip": "Mediator\\Application\\EventHandlers\\LogEventHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADYAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T23:37:32.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PessoaProcuradaNotification.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Application\\Notifications\\PessoaProcuradaNotification.cs",
+              "RelativeDocumentMoniker": "Mediator\\Application\\Notifications\\PessoaProcuradaNotification.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Application\\Notifications\\PessoaProcuradaNotification.cs",
+              "RelativeToolTip": "Mediator\\Application\\Notifications\\PessoaProcuradaNotification.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T23:37:32.716Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AlteraPessoaCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Application\\Handlers\\AlteraPessoaCommandHandler.cs",
+              "RelativeDocumentMoniker": "Mediator\\Application\\Handlers\\AlteraPessoaCommandHandler.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Application\\Handlers\\AlteraPessoaCommandHandler.cs",
+              "RelativeToolTip": "Mediator\\Application\\Handlers\\AlteraPessoaCommandHandler.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAqwBsAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T23:37:32.726Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CadastraPessoaCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Application\\Handlers\\CadastraPessoaCommandHandler.cs",
+              "RelativeDocumentMoniker": "Mediator\\Application\\Handlers\\CadastraPessoaCommandHandler.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Application\\Handlers\\CadastraPessoaCommandHandler.cs",
+              "RelativeToolTip": "Mediator\\Application\\Handlers\\CadastraPessoaCommandHandler.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBoAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T23:37:32.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ExcluiPessoaCommandHandler.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Application\\Handlers\\ExcluiPessoaCommandHandler.cs",
+              "RelativeDocumentMoniker": "Mediator\\Application\\Handlers\\ExcluiPessoaCommandHandler.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Application\\Handlers\\ExcluiPessoaCommandHandler.cs",
+              "RelativeToolTip": "Mediator\\Application\\Handlers\\ExcluiPessoaCommandHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAABXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T23:37:32.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProcuraPessoaIdQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Application\\Handlers\\ProcuraPessoaIdQueryHandler.cs",
+              "RelativeDocumentMoniker": "Mediator\\Application\\Handlers\\ProcuraPessoaIdQueryHandler.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Application\\Handlers\\ProcuraPessoaIdQueryHandler.cs",
+              "RelativeToolTip": "Mediator\\Application\\Handlers\\ProcuraPessoaIdQueryHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T23:37:32.75Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProcuraTodasPessoasQueryHandler.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Application\\Handlers\\ProcuraTodasPessoasQueryHandler.cs",
+              "RelativeDocumentMoniker": "Mediator\\Application\\Handlers\\ProcuraTodasPessoasQueryHandler.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Application\\Handlers\\ProcuraTodasPessoasQueryHandler.cs",
+              "RelativeToolTip": "Mediator\\Application\\Handlers\\ProcuraTodasPessoasQueryHandler.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAhwB0AAABfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T23:37:32.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProcuraPessoaIdQuery.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Application\\Query\\ProcuraPessoaIdQuery.cs",
+              "RelativeDocumentMoniker": "Mediator\\Application\\Query\\ProcuraPessoaIdQuery.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Application\\Query\\ProcuraPessoaIdQuery.cs",
+              "RelativeToolTip": "Mediator\\Application\\Query\\ProcuraPessoaIdQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAYAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T23:37:32.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProcuraTodasPessoasQuery.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Application\\Query\\ProcuraTodasPessoasQuery.cs",
+              "RelativeDocumentMoniker": "Mediator\\Application\\Query\\ProcuraTodasPessoasQuery.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Application\\Query\\ProcuraTodasPessoasQuery.cs",
+              "RelativeToolTip": "Mediator\\Application\\Query\\ProcuraTodasPessoasQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T23:37:32.697Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PessoaProcuraTodasNotification.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Application\\Notifications\\PessoaProcuraTodasNotification.cs",
+              "RelativeDocumentMoniker": "Mediator\\Application\\Notifications\\PessoaProcuraTodasNotification.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Application\\Notifications\\PessoaProcuraTodasNotification.cs",
+              "RelativeToolTip": "Mediator\\Application\\Notifications\\PessoaProcuraTodasNotification.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T23:37:32.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PessoaAlteradaNotification.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Application\\Notifications\\PessoaAlteradaNotification.cs",
+              "RelativeDocumentMoniker": "Mediator\\Application\\Notifications\\PessoaAlteradaNotification.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Application\\Notifications\\PessoaAlteradaNotification.cs",
+              "RelativeToolTip": "Mediator\\Application\\Notifications\\PessoaAlteradaNotification.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T23:37:32.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AlteraPessoaCommand.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Application\\Commands\\AlteraPessoaCommand.cs",
+              "RelativeDocumentMoniker": "Mediator\\Application\\Commands\\AlteraPessoaCommand.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Application\\Commands\\AlteraPessoaCommand.cs",
+              "RelativeToolTip": "Mediator\\Application\\Commands\\AlteraPessoaCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAQAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T23:37:32.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PessoaController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Controllers\\PessoaController.cs",
+              "RelativeDocumentMoniker": "Mediator\\Controllers\\PessoaController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Controllers\\PessoaController.cs",
+              "RelativeToolTip": "Mediator\\Controllers\\PessoaController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAgwDIAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T23:37:32.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ExcluiPessoaCommand.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Application\\Commands\\ExcluiPessoaCommand.cs",
+              "RelativeDocumentMoniker": "Mediator\\Application\\Commands\\ExcluiPessoaCommand.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Application\\Commands\\ExcluiPessoaCommand.cs",
+              "RelativeToolTip": "Mediator\\Application\\Commands\\ExcluiPessoaCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T23:37:32.757Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ErroNotification.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Application\\Notifications\\ErroNotification.cs",
+              "RelativeDocumentMoniker": "Mediator\\Application\\Notifications\\ErroNotification.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Application\\Notifications\\ErroNotification.cs",
+              "RelativeToolTip": "Mediator\\Application\\Notifications\\ErroNotification.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T23:37:32.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PessoaCriadaNotification.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Application\\Notifications\\PessoaCriadaNotification.cs",
+              "RelativeDocumentMoniker": "Mediator\\Application\\Notifications\\PessoaCriadaNotification.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Application\\Notifications\\PessoaCriadaNotification.cs",
+              "RelativeToolTip": "Mediator\\Application\\Notifications\\PessoaCriadaNotification.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T23:37:32.782Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PessoaExcluidaNotification.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Application\\Notifications\\PessoaExcluidaNotification.cs",
+              "RelativeDocumentMoniker": "Mediator\\Application\\Notifications\\PessoaExcluidaNotification.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Application\\Notifications\\PessoaExcluidaNotification.cs",
+              "RelativeToolTip": "Mediator\\Application\\Notifications\\PessoaExcluidaNotification.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T23:37:32.791Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CadastraPessoaCommand.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Application\\Commands\\CadastraPessoaCommand.cs",
+              "RelativeDocumentMoniker": "Mediator\\Application\\Commands\\CadastraPessoaCommand.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Application\\Commands\\CadastraPessoaCommand.cs",
+              "RelativeToolTip": "Mediator\\Application\\Commands\\CadastraPessoaCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T23:37:32.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Pessoa.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Application\\Models\\Pessoa.cs",
+              "RelativeDocumentMoniker": "Mediator\\Application\\Models\\Pessoa.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Application\\Models\\Pessoa.cs",
+              "RelativeToolTip": "Mediator\\Application\\Models\\Pessoa.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T23:37:32.806Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Program.cs",
+              "RelativeDocumentMoniker": "Mediator\\Program.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Program.cs",
+              "RelativeToolTip": "Mediator\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T23:37:32.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "PessoaDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Data\\PessoaDbContext.cs",
+              "RelativeDocumentMoniker": "Mediator\\Data\\PessoaDbContext.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CSharp\\Mediator\\Mediator\\Data\\PessoaDbContext.cs",
+              "RelativeToolTip": "Mediator\\Data\\PessoaDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T23:37:32.818Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

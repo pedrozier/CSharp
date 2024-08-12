@@ -1,0 +1,11 @@
+﻿CREATE TABLE IF NOT EXISTS ENDERECOS (
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    Cep TEXT NOT NULL,
+    Logradouro TEXT NOT NULL,
+    Complemento TEXT,
+    Unidade TEXT,
+    Bairro TEXT NOT NULL,
+    Localidade TEXT NOT NULL,
+    Uf TEXT NOT NULL,
+    Ibge TEXT
+);

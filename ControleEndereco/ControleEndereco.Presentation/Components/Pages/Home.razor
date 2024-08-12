@@ -1,0 +1,33 @@
+﻿@page "/"
+
+<MudGrid Spacing="4" Justify="Justify.FlexStart" class="mt-4">
+    <MudItem xs="12" sm="6" md="4" class="d-flex justify-content-center">
+        <div class="fixed-width" style="width: 300px; height: 250px;">
+            <MudCard style="height: 100%;">
+                <MudCardMedia Image="images/map.png" Height="80" />
+                <MudCardContent>
+                    <MudText Typo="Typo.h5">Endereços</MudText>
+                    <MudText Typo="Typo.body2">Lista para gerenciar enderecos.</MudText>
+                    <MudText Typo="Typo.body2">Busque e Salve endereços.</MudText>
+                </MudCardContent>
+                <MudCardActions>
+                    <MudButton Variant="Variant.Text" Color="Color.Primary" Href="/enderecos">Ir para Lista</MudButton>
+                </MudCardActions>
+            </MudCard>
+        </div>
+    </MudItem>
+    <MudItem xs="12" sm="6" md="4" class="d-flex justify-content-center">
+        <div class="fixed-width" style="width: 300px; height: 250px;">
+            <MudCard style="height: 100%;">
+                <MudCardMedia Image="images/about.png" Height="80" />
+                <MudCardContent>
+                    <MudText Typo="Typo.h5">Sobre</MudText>
+                    <MudText Typo="Typo.body2">Informações sobre o projeto.</MudText>
+                </MudCardContent>
+                <MudCardActions>
+                    <MudButton Variant="Variant.Text" Color="Color.Primary" Href="/sobre">Ler Mais</MudButton>
+                </MudCardActions>
+            </MudCard>
+        </div>
+    </MudItem>
+</MudGrid>

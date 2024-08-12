@@ -1,0 +1,61 @@
+﻿@page "/sobre"
+
+<h3>Sobre</h3>
+<p>Bem-vindo à página sobre o projeto!</p>
+
+<p>
+    Este projeto foi desenvolvido com o objetivo de criar uma aplicação moderna e eficiente para gerenciamento de endereços. Utilizamos uma combinação de técnicas e ferramentas de desenvolvimento para garantir que a aplicação seja robusta, escalável e fácil de manter.
+</p>
+
+<h4>Arquitetura do Projeto</h4>
+
+<h5>Arquitetura Limpa (Clean Architecture)</h5>
+<p>
+    No backend, adotamos a <strong>Arquitetura Limpa</strong> para estruturar o código de forma que seja modular e independente. Esta abordagem facilita a manutenção e a escalabilidade do sistema, garantindo que as regras de negócio e as dependências sejam bem separadas. A <strong>Arquitetura Limpa</strong> promove:
+</p>
+<ul>
+    <li><strong>Separação de Responsabilidades:</strong> As camadas de domínio, aplicação e infraestrutura são claramente separadas.</li>
+    <li><strong>Testabilidade:</strong> Facilita a escrita de testes unitários e de integração.</li>
+    <li><strong>Independência de Frameworks:</strong> O código de domínio não depende de bibliotecas ou frameworks externos.</li>
+</ul>
+
+<h5>MVVM no Frontend</h5>
+<p>
+    Para o frontend, utilizamos o padrão <strong>Model-View-ViewModel (MVVM)</strong>. Esse padrão permite uma separação clara entre a lógica de apresentação e a interface do usuário, facilitando a manutenção e a evolução da aplicação. A implementação do MVVM proporciona:
+</p>
+<ul>
+    <li><strong>Separação de Preocupações:</strong> A lógica de negócios e a interface do usuário são bem separadas.</li>
+    <li><strong>Facilidade de Testes:</strong> A lógica de apresentação pode ser testada sem a necessidade de interagir com a interface do usuário.</li>
+</ul>
+
+<h5>Banco de Dados e Acesso a Dados</h5>
+<p>
+    Utilizamos <strong>SQLite</strong> como banco de dados, aproveitando sua leveza e eficiência. Para o acesso aos dados, empregamos o <strong>Dapper</strong>, um micro ORM que proporciona alta performance e simplicidade na execução de consultas SQL. O uso do Dapper permite:
+</p>
+<ul>
+    <li><strong>Consultas Rápidas:</strong> Execução eficiente de comandos SQL.</li>
+    <li><strong>Leveza e Simplicidade:</strong> Integração fácil e com baixo overhead.</li>
+</ul>
+
+<h5>Mediator para Comunicação Interna</h5>
+<p>
+    Para a comunicação entre diferentes partes da aplicação, utilizamos o <strong>Mediator</strong>. Esta abordagem remove a necessidade de usar REST controllers e requisições HTTP para interações internas, simplificando a comunicação e promovendo uma arquitetura mais coesa. O <strong>Mediator</strong> ajuda a:
+</p>
+<ul>
+    <li><strong>Reduzir Acoplamento:</strong> Facilita a comunicação entre componentes sem a necessidade de referências diretas.</li>
+    <li><strong>Centralizar Manipulação de Comandos e Consultas:</strong> Melhora a organização e a manutenção do código.</li>
+</ul>
+
+<h5>MudBlazor para Interface Moderna</h5>
+<p>
+    A interface do usuário foi desenvolvida usando <strong>MudBlazor</strong>, uma biblioteca de componentes Blazor baseada em Material Design. Isso garante uma interface moderna, responsiva e agradável ao usuário. As vantagens do MudBlazor incluem:
+</p>
+<ul>
+    <li><strong>Design Atraente:</strong> Componentes que seguem as diretrizes do Material Design.</li>
+    <li><strong>Facilidade de Personalização:</strong> Configurações e estilos podem ser ajustados para atender às necessidades específicas do projeto.</li>
+</ul>
+
+<p>
+    Este projeto combina várias técnicas e ferramentas modernas para criar uma aplicação robusta e de fácil manutenção. Desde a arquitetura do backend até a interface do usuário, cada componente foi escolhido para garantir a melhor performance e a melhor experiência para o usuário final. Esperamos que este projeto atenda às suas expectativas e ofereça uma solução eficaz para o gerenciamento de endereços.
+</p>
+

@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\client",
+    "\\crud",
+    "\\crud\\Controllers",
+    "\\crud\\Data",
+    "\\crud\\Models"
+  ],
+  "SelectedNode": "\\crud\\Controllers\\IssueController.cs",
+  "PreviewInSolutionExplorer": false
+}

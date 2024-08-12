@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\CSharp\\crud\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Desktop\\CSharp\\crud\\crud\\Controllers\\IssueController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:crud\\Controllers\\IssueController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Desktop\\CSharp\\crud\\crud\\Models\\Issue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:crud\\Models\\Issue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\user\\Desktop\\CSharp\\crud\\crud\\Data\\IssueDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:crud\\Data\\IssueDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Issue.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CSharp\\crud\\crud\\Models\\Issue.cs",
+              "RelativeDocumentMoniker": "crud\\Models\\Issue.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CSharp\\crud\\crud\\Models\\Issue.cs",
+              "RelativeToolTip": "crud\\Models\\Issue.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T21:21:36.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IssueController.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CSharp\\crud\\crud\\Controllers\\IssueController.cs",
+              "RelativeDocumentMoniker": "crud\\Controllers\\IssueController.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CSharp\\crud\\crud\\Controllers\\IssueController.cs*",
+              "RelativeToolTip": "crud\\Controllers\\IssueController.cs*",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T21:21:00.7Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IssueDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\CSharp\\crud\\crud\\Data\\IssueDbContext.cs",
+              "RelativeDocumentMoniker": "crud\\Data\\IssueDbContext.cs",
+              "ToolTip": "C:\\Users\\user\\Desktop\\CSharp\\crud\\crud\\Data\\IssueDbContext.cs",
+              "RelativeToolTip": "crud\\Data\\IssueDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T21:20:51.087Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

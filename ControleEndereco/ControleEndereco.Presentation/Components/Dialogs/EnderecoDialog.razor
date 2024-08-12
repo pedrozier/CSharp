@@ -1,0 +1,132 @@
+﻿@using ControleEndereco.Presentation.Components.Models
+@using MudBlazor
+@using ControleEndereco.Presentation.Components.ViewModels
+@inject EnderecoViewModel EnderecoViewModel
+@inject IDialogService DialogService
+
+<MudDialog>
+    <TitleContent>@(EnderecoModel.Id == null || EnderecoModel.Id == 0 ? "Adicionar Endereco" : "Editar Endereco")</TitleContent>
+    <DialogContent>
+        <MudForm @ref="form" Model="@EnderecoModel" OnValidSubmit="HandleValidSubmit">
+            <MudGrid>
+                <MudItem xs="11">
+                    <MudTextField Label="CEP"
+                                  @bind-Value="EnderecoModel.Cep"
+                                  MaxLength="8"
+                                  @onchange="OnCepValueChanged"
+                                  FullWidth="true"
+                                  Margin="Margin.None" />
+                </MudItem>
+                <MudItem xs="1" style="display: flex; align-items: center; justify-content: flex-end;">
+                    <MudIconButton OnClick="CarregarEnderecoPorCep"
+                                   Icon="@Icons.Material.Filled.ArrowForward"
+                                   Variant="Variant.Filled"
+                                   Color="Color.Primary"
+                                   Style="width: 40px; height: 40px; padding: 0;"
+                                   Title="Buscar">
+                    </MudIconButton>
+                </MudItem>
+                <MudItem xs="12">
+                    <MudTextField Label="Logradouro" @bind-Value="EnderecoModel.Logradouro" FullWidth="true" />
+                </MudItem>
+                <MudItem xs="12">
+                    <MudTextField Label="Complemento" @bind-Value="EnderecoModel.Complemento" FullWidth="true" />
+                </MudItem>
+                <MudItem xs="12">
+                    <MudTextField Label="Unidade" @bind-Value="EnderecoModel.Unidade" FullWidth="true" />
+                </MudItem>
+                <MudItem xs="12">
+                    <MudTextField Label="Bairro" @bind-Value="EnderecoModel.Bairro" FullWidth="true" />
+                </MudItem>
+                <MudItem xs="12">
+                    <MudTextField Label="Localidade" @bind-Value="EnderecoModel.Localidade" FullWidth="true" />
+                </MudItem>
+                <MudItem xs="12">
+                    <MudTextField Label="UF" @bind-Value="EnderecoModel.Uf" FullWidth="true" />
+                </MudItem>
+                <MudItem xs="12">
+                    <MudTextField Label="IBGE" @bind-Value="EnderecoModel.Ibge" FullWidth="true" />
+                </MudItem>
+            </MudGrid>
+        </MudForm>
+    </DialogContent>
+    <DialogActions>
+        <MudButton Color="Color.Error" OnClick="Remove" StartIcon="@Icons.Material.Filled.Delete" Disabled="EnderecoModel.Id == null || EnderecoModel.Id == 0 ? true : false">Deletar</MudButton>
+        <MudButton Color="Color.Primary" OnClick="Cancel" StartIcon="@Icons.Material.Filled.Cancel">Cancelar</MudButton>
+        <MudButton Color="Color.Success" OnClick="Save" StartIcon="@Icons.Material.Filled.Save">Salvar</MudButton>
+    </DialogActions>
+</MudDialog>
+
+@code {
+    [Parameter] public Endereco EnderecoModel { get; set; }
+    [Parameter] public EventCallback<Endereco> OnSave { get; set; }
+    [Parameter] public EventCallback OnCancel { get; set; }
+    [Parameter] public EventCallback OnRemove { get; set; }
+
+    [CascadingParameter] private MudDialogInstance MudDialog { get; set; }
+
+    private MudForm form;
+
+    private async Task HandleValidSubmit()
+    {
+        if (form.IsValid)
+        {
+            await OnSave.InvokeAsync(EnderecoModel);
+            MudDialog?.Close(DialogResult.Ok(EnderecoModel));
+        }
+    }
+
+    private async Task Save()
+    {
+        await HandleValidSubmit();
+    }
+
+    private void Cancel()
+    {
+        MudDialog?.Close(DialogResult.Cancel());
+    }
+
+    private async Task Remove()
+    {
+        var confirmed = await DialogService.ShowMessageBox("Confirmar", "Deseja realmente deletar este endereço?", "Sim", "Não");
+        if (confirmed == true)
+        {
+            await OnRemove.InvokeAsync();
+            MudDialog?.Close(DialogResult.Ok(EnderecoModel));
+        }
+    }
+
+    private async Task OnCepValueChanged(ChangeEventArgs e)
+    {
+        var cep = e.Value?.ToString();
+        if (!string.IsNullOrEmpty(cep) && cep.Length == 8)
+        {
+            await CarregarPreencherEnderecoAsync(cep);
+        }
+    }
+
+    private async Task CarregarEnderecoPorCep()
+    {
+        var cep = EnderecoModel.Cep;
+        if (!string.IsNullOrEmpty(cep) && cep.Length == 8)
+        {
+            await CarregarPreencherEnderecoAsync(cep);
+        }
+    }
+
+    private async Task CarregarPreencherEnderecoAsync(string cep)
+    {
+        var endereco = await EnderecoViewModel.ConsultarEnderecoPorCepAsync(cep);
+        if (endereco != null)
+        {
+            EnderecoModel.Logradouro = endereco.Logradouro;
+            EnderecoModel.Complemento = endereco.Complemento;
+            EnderecoModel.Unidade = endereco.Unidade;
+            EnderecoModel.Bairro = endereco.Bairro;
+            EnderecoModel.Localidade = endereco.Localidade;
+            EnderecoModel.Uf = endereco.Uf;
+            EnderecoModel.Ibge = endereco.Ibge;
+            StateHasChanged();
+        }
+    }
+}

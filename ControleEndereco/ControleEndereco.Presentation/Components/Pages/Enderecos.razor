@@ -1,0 +1,168 @@
+﻿@page "/enderecos"
+@using ControleEndereco.Presentation.Components.Models
+@using ControleEndereco.Presentation.Components.ViewModels
+@using ControleEndereco.Presentation.Components.Dialogs
+@using MediatR
+@inject IMediator Mediator
+@inject IDialogService DialogService
+
+<style>
+    .selected {
+        background-color: lightblue !important;
+    }
+</style>
+
+<MudTable Items="@FilteredEnderecos" Class="mt-5" Dense="true" Hover="true" Bordered="true" Striped="true" CanCancelEdit="true" CustomHeader="true">
+    <ToolBarContent>
+        <MudText Typo="Typo.h6">Endereços</MudText>
+        <MudButton OnClick="AbrirAdicionarDialog" Variant="Variant.Filled" Color="Color.Primary" Size="Size.Small" Style="margin-left: 8px;">Adicionar</MudButton>
+        <MudButton OnClick="AbrirEditarDialog" Variant="Variant.Filled" Color="Color.Secondary" Size="Size.Small" Style="margin-left: 8px;" Disabled="!IsRowSelected">Editar/Remover</MudButton>
+        <MudSpacer />
+        <MudTextField T="string" ValueChanged="OnSearch" Value="@SearchTerm" Immediate="true" Placeholder="Search" Adornment="Adornment.Start"
+                      AdornmentIcon="@Icons.Material.Filled.Search" IconSize="Size.Medium" Class="mt-0"></MudTextField>
+    </ToolBarContent>
+    <HeaderContent>
+        <MudTHeadRow>
+            <MudTh><MudTableSortLabel SortBy="new Func<Endereco, object>(x => x.Cep)">Cep</MudTableSortLabel></MudTh>
+            <MudTh><MudTableSortLabel SortBy="new Func<Endereco, object>(x => x.Logradouro)">Logradouro</MudTableSortLabel></MudTh>
+            <MudTh><MudTableSortLabel SortBy="new Func<Endereco, object>(x => x.Complemento)">Complemento</MudTableSortLabel></MudTh>
+            <MudTh><MudTableSortLabel SortBy="new Func<Endereco, object>(x => x.Unidade)">Unidade</MudTableSortLabel></MudTh>
+            <MudTh><MudTableSortLabel SortBy="new Func<Endereco, object>(x => x.Bairro)">Bairro</MudTableSortLabel></MudTh>
+            <MudTh><MudTableSortLabel SortBy="new Func<Endereco, object>(x => x.Localidade)">Localidade</MudTableSortLabel></MudTh>
+            <MudTh><MudTableSortLabel SortBy="new Func<Endereco, object>(x => x.Uf)">Uf</MudTableSortLabel></MudTh>
+            <MudTh><MudTableSortLabel SortBy="new Func<Endereco, object>(x => x.Ibge)">Ibge</MudTableSortLabel></MudTh>
+        </MudTHeadRow>
+    </HeaderContent>
+
+    <RowTemplate>
+        <MudTd DataLabel="Cep" @onclick="@(args => OnRowClick(context))" Class="@GetRowClass(context)">@context.Cep</MudTd>
+        <MudTd DataLabel="Logradouro" @onclick="@(args => OnRowClick(context))" Class="@GetRowClass(context)">@context.Logradouro</MudTd>
+        <MudTd DataLabel="Complemento" @onclick="@(args => OnRowClick(context))" Class="@GetRowClass(context)">@context.Complemento</MudTd>
+        <MudTd DataLabel="Unidade" @onclick="@(args => OnRowClick(context))" Class="@GetRowClass(context)">@context.Unidade</MudTd>
+        <MudTd DataLabel="Bairro" @onclick="@(args => OnRowClick(context))" Class="@GetRowClass(context)">@context.Bairro</MudTd>
+        <MudTd DataLabel="Localidade" @onclick="@(args => OnRowClick(context))" Class="@GetRowClass(context)">@context.Localidade</MudTd>
+        <MudTd DataLabel="Uf" @onclick="@(args => OnRowClick(context))" Class="@GetRowClass(context)">@context.Uf</MudTd>
+        <MudTd DataLabel="Ibge" @onclick="@(args => OnRowClick(context))" Class="@GetRowClass(context)">@context.Ibge</MudTd>
+    </RowTemplate>
+
+    <NoRecordsContent>
+        <MudText>Nenhum endereço foi encontrado.</MudText>
+    </NoRecordsContent>
+    <LoadingContent>
+        <MudText>Carregando...</MudText>
+    </LoadingContent>
+    <PagerContent>
+        <MudTablePager RowsPerPageString="Linhas:" />
+    </PagerContent>
+</MudTable>
+
+@code {
+    private EnderecoViewModel ViewModel { get; set; }
+    private string SearchTerm { get; set; } = string.Empty;
+    private Endereco selectedEndereco;
+    private bool IsRowSelected => selectedEndereco != null;
+    private List<Endereco> TableEnderecos => ViewModel.Enderecos;
+    private List<Endereco> FilteredEnderecos => TableEnderecos
+        .Where(e => string.IsNullOrWhiteSpace(SearchTerm) ||
+                    e.Cep.Contains(SearchTerm, StringComparison.OrdinalIgnoreCase) ||
+                    e.Logradouro.Contains(SearchTerm, StringComparison.OrdinalIgnoreCase) ||
+                    e.Complemento.Contains(SearchTerm, StringComparison.OrdinalIgnoreCase) ||
+                    e.Unidade.Contains(SearchTerm, StringComparison.OrdinalIgnoreCase) ||
+                    e.Bairro.Contains(SearchTerm, StringComparison.OrdinalIgnoreCase) ||
+                    e.Localidade.Contains(SearchTerm, StringComparison.OrdinalIgnoreCase) ||
+                    e.Uf.Contains(SearchTerm, StringComparison.OrdinalIgnoreCase) ||
+                    e.Ibge.Contains(SearchTerm, StringComparison.OrdinalIgnoreCase))
+        .ToList();
+
+    protected override async Task OnInitializedAsync()
+    {
+        ViewModel = new EnderecoViewModel(Mediator);
+        await ViewModel.CarregarEnderecosAsync();
+    }
+
+    private void OnSearch(string searchTerm)
+    {
+        SearchTerm = searchTerm;
+        StateHasChanged();
+    }
+
+    private void OnRowClick(Endereco endereco)
+    {
+        selectedEndereco = endereco;
+        StateHasChanged();
+    }
+
+    private string GetRowClass(Endereco endereco)
+    {
+        return selectedEndereco == endereco ? "selected" : string.Empty;
+    }
+
+    private async Task AbrirAdicionarDialog()
+    {
+        var endereco = new Endereco();
+
+        var parameters = new DialogParameters
+        {
+            { "EnderecoModel", endereco },
+            { "OnSave", EventCallback.Factory.Create<Endereco>(this, async (e) => await CriarEnderecoAsync(e)) }
+        };
+
+        var options = new DialogOptions
+        {
+            CloseOnEscapeKey = true
+        };
+
+        var dialog = DialogService.Show<EnderecoDialog>("Adicionar Endereco", parameters, options);
+        await dialog.Result;
+    }
+
+    private async Task AbrirEditarDialog()
+    {
+        if (selectedEndereco == null) return;
+
+        var parameters = new DialogParameters
+        {
+            { "EnderecoModel", selectedEndereco },
+            { "OnSave", EventCallback.Factory.Create<Endereco>(this, async (e) => await AtualizarEnderecoAsync(e)) },
+            { "OnRemove", EventCallback.Factory.Create(this, async () => await DeletarEnderecoAsync(selectedEndereco.Id)) }
+        };
+
+        var options = new DialogOptions
+        {
+            CloseOnEscapeKey = true
+        };
+
+        var dialog = DialogService.Show<EnderecoDialog>("Editar Endereco", parameters, options);
+        await dialog.Result;
+    }
+
+    private async Task CriarEnderecoAsync(Endereco endereco)
+    {
+        bool sucesso = await ViewModel.CriarEnderecoAsync(endereco);
+        if (sucesso)
+        {
+            await ViewModel.CarregarEnderecosAsync();
+            StateHasChanged();
+        }
+    }
+
+    private async Task AtualizarEnderecoAsync(Endereco endereco)
+    {
+        bool sucesso = await ViewModel.AtualizarEnderecoAsync(endereco);
+        if (sucesso)
+        {
+            await ViewModel.CarregarEnderecosAsync();
+            StateHasChanged();
+        }
+    }
+
+    private async Task DeletarEnderecoAsync(long id)
+    {
+        bool sucesso = await ViewModel.DeletarEnderecoAsync(id);
+        if (sucesso)
+        {
+            await ViewModel.CarregarEnderecosAsync();
+            StateHasChanged();
+        }
+    }
+}
